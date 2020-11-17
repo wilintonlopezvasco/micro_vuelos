@@ -1,11 +1,12 @@
-package com.semana3.api.core.controller.dto;
+package com.semana3.api.core.pasajeros.controller.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
 
-public class PasajeroDTO implements Serializable {
+public class PasajeroRequestDTO implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @Getter @Setter
@@ -24,15 +25,8 @@ public class PasajeroDTO implements Serializable {
     private String genero;
 
     @Getter @Setter
-    private String tipoIdentificacion;
-
-    @Getter @Setter
-    private String identificacion;
-
-    @Getter @Setter
     private String celular;
 
     @Getter @Setter
-    private String correo;
-
+    private String email;
 }

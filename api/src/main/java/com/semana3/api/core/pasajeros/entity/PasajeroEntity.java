@@ -1,4 +1,4 @@
-package com.semana3.api.core.entity;
+package com.semana3.api.core.pasajeros.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +25,9 @@ public class PasajeroEntity {
     private String apellidos;
 
     @Column(name = "ds_genero")
+    private String genero;
+
+    @Column(name = "ds_tipoIdentificacion")
     private String tipoIdentificacion;
 
     @Column(name = "ds_identificacion")
